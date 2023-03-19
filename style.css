@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: white;
+    height: 50px;
+    width: 100%;
+}
+
+ label#logo {
+    color: #fff;
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 40px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a#active,
+a:hover {
+    background: #fff;
+    transition: 0.5s;
+    color: orangered;
+}
+button{
+    padding: 10px;
+    background-color: orangered;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+/* Background Image */
+#banner {
+    background: url(./Pictures/bg.webp);
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-position: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+
+ #banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-right: 50px;
+} 
+
+#banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 20px;
+}
+.btn {
+    position: relative;
+    background: orangered;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: orangered;
+}
+.heading {
+    color: black;
+    text-align: left;
+}
+
+.services1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.services1 .services2 {
+    padding: 40px 20px;
+    background: orangered;
+    color: black;
+    max-width: 340px;
+    /* height: 500px; */
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    border: orangered;
+}
+
+.services1 .services2:hover {
+    background: white;
+}
+
+.services1 .services2 img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.services1 .services2 h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.imgstyling{
+    margin-top: 20px;
+}
+#content2 {
+    display: flex;
+    justify-content: space-between;
+    color: orangered;
+}
+
+#content3{
+    font-size: 24px;
+    margin-top: 90px;
+}
+
+#w50 {
+    min-width: 20%;
+}
+#sec2 {
+    padding: 30px;
+}
+
+#sec3 {
+    padding: 100px;
+}
+
+#btn3 {
+    position: relative;
+    background: orangered;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 300px;
+    margin-top: 90px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#btn3:hover {
+    letter-spacing: 3px;
+}
+#banner2 {
+    background: url(./Pictures/Contact\ bg.jfif);
+    background-size: cover;
+    width: 120%;
+    min-height: 50vh;
+}
+.Review {
+    background: url(./Images/ReviewBg.jfif);
+    background-size: cover;
+    margin: 70px;
+}
+
+.Review .Reviewcontent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.Review .Reviewcontent .Reviewbox {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.Review .Reviewcontent .Reviewbox .ReviewimgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+
+.Review .Reviewcontent .Reviewbox .ReviewimgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Review .Reviewcontent .Reviewbox .text p {
+    font-style: italic;
+    color: #fff;
+}
+
+.Review .Reviewcontent .Reviewbox .text h3 {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bolder;
+}
+.footer{
+    background-color: black;
+}
